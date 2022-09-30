@@ -59,7 +59,7 @@ class DatabaseFeatures(BaseDatabaseFeatures):
     @cached_property
     def minimum_database_version(self):
         if self.connection.mysql_is_mariadb:
-            return (10, 4)
+            return (10, 1)
         else:
             return (8,)
 
